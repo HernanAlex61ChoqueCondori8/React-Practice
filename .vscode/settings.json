@@ -1,0 +1,128 @@
+//Configuracion local de Visual Code
+{
+	"editor.formatOnSave": true,
+	//Estable que solo formatea el codigo al guardar si existe un archivo de configuracion de prettier
+	"prettier.requireConfig": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"todohighlight.isEnable": true,
+	"todohighlight.isCaseSensitive": true,
+	"todohighlight.toggleURI": false,
+	"todohighlight.keywords": [
+		{
+			"text": "NOTE:",
+			"color": "#000000",
+			"backgroundColor": "#9EFFD0",
+			"overviewRulerColor": "#9EFFD0",
+			"border": "1px solid #9EFFD0",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		},
+		{
+			"text": "console.log",
+			"color": "black",
+			"backgroundColor": "#F3F1F5",
+			"overviewRulerColor": "#F3F1F5",
+			"border": "1px solid #F3F1F5",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		},
+		{
+			"text": "[DEBUG]",
+			"color": "white",
+			"backgroundColor": "#FF7878",
+			"overviewRulerColor": "#FF7878",
+			"border": "1px solid #FF7878",
+			"borderRadius": "0px",
+			"isWholeLine": true
+		},
+		{
+			"text": "ATTENTION:",
+			"color": "black",
+			"backgroundColor": "#FDFF9E",
+			"border": "1px solid #FDFF9E",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		},
+		{
+			"text": "DEBUG:",
+			"color": "black",
+			"backgroundColor": "#FFA294",
+			"border": "1px solid #FFA294",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		},
+		{
+			"text": "CONCEPT:",
+			"color": "black",
+			"backgroundColor": "#FBC6A4",
+			"border": "1px solid #FBC6A4",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		},
+		{
+			"text": "TIP:",
+			"color": "white",
+			"backgroundColor": "#B590CA",
+			"border": "1px solid #B590CA",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		},
+		{
+			"text": "APPLICATION:",
+			"color": "white",
+			"backgroundColor": "#D1EAA3",
+			"border": "1px solid #D1EAA3",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		},
+		{
+			"text": "ERROR:",
+			"color": "white",
+			"backgroundColor": "#ff6961",
+			"border": "1px solid #ff6961",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		},
+		{
+			"text": "SOLUTION:",
+			"color": "white",
+			"backgroundColor": "#77dd77",
+			"border": "1px solid #77dd77",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		},
+		{
+			"text": "CODE:",
+			"color": "white",
+			"backgroundColor": "#000000",
+			"border": "1px solid #000000",
+			"borderRadius": "2px",
+			"isWholeLine": false
+		}
+	],
+	"todohighlight.include": [
+		"**/*.js",
+		"**/*.jsx",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.html",
+		"**/*.php",
+		"**/*.css",
+		"**/*.scss"
+	],
+	"todohighlight.exclude": [
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/dist/**",
+		"**/build/**",
+		"**/.vscode/**",
+		"**/.github/**",
+		"**/_output/**",
+		"**/*.min.*",
+		"**/*.map",
+		"**/.next/**"
+	],
+	"todohighlight.defaultStyle": {
+		"cursor": "pointer"
+	}
+}

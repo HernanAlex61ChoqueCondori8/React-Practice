@@ -1,38 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Lexend Deca', sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  text-align: start;
   min-height: 100vh;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  margin: 0 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.three-cars {
+  max-width: 120rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.car-card {
+  max-width: 31rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  padding: 5rem;
+}
+.car-card--orange {
+  background-color: var(--bright-orange);
+  border-radius: 1rem 0 0 1rem;
+}
+.car-card--cyan {
+  background-color: var(--dark-cyan);
+}
+.car-card--dark-cyan {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 1rem 1rem 0;
+}
+.car-card__title {
+  margin: 3rem 0;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: var(--very-light-gray);
+}
+.car-card__text {
+  color: var(--transparent-white);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+
+  margin: 0;
+  margin-bottom: 8rem;
+}
+.car-card__btn {
+  background-color: transparent;
+  padding: 1.2rem 4rem;
+
+  outline: none;
+  color: var(--transparent-white);
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  border-radius: 4rem;
+  border: 0.2rem solid var(--very-light-gray);
+
+  transition-duration: 0.5s;
+}
+
+.car-card__btn--orange:hover{
+  background-color:var(--very-light-gray);
+  color: var(--bright-orange)
+}
+.car-card__btn--cyan:hover{
+  background-color:var(--very-light-gray);
+  color: var(--dark-cyan);
+}
+.car-card__btn--dark-cyan:hover{
+  background-color:var(--very-light-gray);
+  color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 768px) {
+  .App{
+    margin: 8rem 4rem;
   }
-  to {
-    transform: rotate(360deg);
+  .three-cars {
+    flex-direction: column;
+  }
+  .car-card {
+    max-width: 41rem;
+    width: 100%;
+  }
+  .car-card--orange {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .car-card--dark-cyan {
+    border-radius: 0 0 1rem 1rem;
+  }
+  .car-card__text {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .car-card__text {
+    font-size: 1.6rem;
+
+    margin-bottom: 4rem;
+  }
+  .car-card__btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .App{
+    margin: 4rem 2rem;
+  }
+  .car-card__text {
+    font-size: 1.5rem;
+
+    margin-bottom: 4rem;
+  }
+  .car-card__btn {
+    font-size: 1.5rem;
   }
 }
